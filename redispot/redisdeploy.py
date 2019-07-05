@@ -83,7 +83,7 @@ class RedisServerFactory(ServerFactory):
     
     protocol = RedisServer
 
-def reddeploy(port=6109,method='stdout'):
+def reddeploy(port=6379,method='stdout'):
     if method != 'stdout':
 	log.startLogging(open('redis.log', 'a'))  
     else:
